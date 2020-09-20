@@ -1,24 +1,24 @@
-const assertEqual = require("../assertEqual");
+const assert = require('chai').assert;
 const tail = require("../tail");
 
 
-// TEST CODE
+describe("#tail", () => {
+  it("returns ['Lighthouse', 'Labs'] when passed ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
+  });
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-const expected = ['Lighthouse', 'Labs'];
-assertEqual(result.length, expected.length);
-for (let i = 0; i < result.length; i++) {
-  assertEqual(result[i], expected[i]);
-}
+  it("returns [] when passed [12]", () => {
+    assert.deepEqual(tail([12]), []);
+  });
 
-const output = tail([]);
-assertEqual(output.length, 0);
+  it("returns [] when passed []", () => {
+    assert.deepEqual(tail([]), []);
+  });
 
-const single = tail(['Hi']);
-assertEqual(single.length, 0);
-
-
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+  it("should not change the array passed to it", () => {
+    let words = ["Yo Yo", "Lighthouse", "Labs"];
+    tail(words);
+    assert.deepEqual(words, ["Yo Yo", "Lighthouse", "Labs"]);
+  });
+  
+});
