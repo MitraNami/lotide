@@ -1,3 +1,5 @@
+//Given two arrays return true if the arrays are equal otherwise false
+
 const eqArrays = function(array1, array2) {
   let equality = true;
   if (array1.length === array2.length) {
@@ -13,4 +15,4 @@ const eqArrays = function(array1, array2) {
   return equality;
 };
 
-module.exports = eqArrays
+module.exports = eqArrays;

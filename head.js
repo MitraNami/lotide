@@ -1,4 +1,4 @@
-const assertEqual = require("./assertEqual");
+//returns the first element of an array
 
 
 const head = function(array) {

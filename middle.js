@@ -1,4 +1,4 @@
-//takes an array and returns an array containing the middle element if 
+//takes an array and returns an array containing the middle element if
 //the original array has odd number of elements or an array containing the two
 //midle elements if the array has even number of elements
 
