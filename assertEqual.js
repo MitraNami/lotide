@@ -11,8 +11,5 @@ const assertEqual = function(actual, expected) {
   console.log(output);
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual("Mitra", "Mitra");
-assertEqual(2, -2);
-assertEqual(1, 1);
+
+module.exports = assertEqual;
