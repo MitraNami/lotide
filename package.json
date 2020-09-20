@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mitra_nami/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mitra's Lotide",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/MitraNami/lotide.git"
   },
-  "author": "",
+  "author": "Mitra Nami <a.mxnami@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MitraNami/lotide/issues"
