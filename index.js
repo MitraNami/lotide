@@ -9,13 +9,13 @@ const countLetters = require("./countLetters");
 const findKey = require("./findKey");
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  map: map,
-  without: without,
-  takeUntil: takeUntil,
-  eqArrays: eqArrays,
-  countLetters: countLetters,
-  findKey: findKey,
+  head,
+  tail,
+  middle,
+  map,
+  without,
+  takeUntil,
+  eqArrays,
+  countLetters,
+  findKey,
 };
