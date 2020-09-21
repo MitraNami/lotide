@@ -35,3 +35,7 @@ The following functions are currently implemented:
 * `eqArrays(array1, array2)`: returns true if the arrays are equal otherwise false
 * `countLetters(string)`: returns an object with letters as keys an their counts as values
 * `findKey(obj, callback)`: returns the first key of the obj for which the callback returns a truthy value
+* `letterPositions(string)`: returns an obj whose keys are letters and values are arrays of indicies
+* `eqObjects(obj1, obj2)`: returns true if obj1 and obj2 are equal otherwise false
+* `flatten(array)`: returns the un-nested array
+* 

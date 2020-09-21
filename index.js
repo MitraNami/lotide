@@ -7,6 +7,9 @@ const takeUntil = require("./takeUntil");
 const eqArrays = require("./eqArrays");
 const countLetters = require("./countLetters");
 const findKey = require("./findKey");
+const letterPositions = require("./letterPositions");
+const eqObjects = require("./eqObjects");
+const flatten = require("./flatten");
 
 module.exports = {
   head,
@@ -18,4 +21,8 @@ module.exports = {
   eqArrays,
   countLetters,
   findKey,
+  letterPositions,
+  eqObjects,
+  flatten,
+  
 };
