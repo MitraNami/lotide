@@ -14,9 +14,6 @@
 //   return flattenedArray;
 // };
 
-// const flattened = flatten([[1, 2], [3, [[4], 5]], [[[[6]]]]]);
-// assertArraysEqual(flattened, [1, 2, 3, 4, 5, 6]);
-
 
 // only handles one level of nesting:
 const flatten = function(arr) {
