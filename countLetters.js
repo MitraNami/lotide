@@ -1,16 +1,17 @@
 //when passed a string returns an object that has each element as key
 //and its count as value
 
-const countLetters = function(string) {
-  const results = {};
-  for (let letter of string) {
-    if (!results[letter]) {
-      results[letter] = 0;
+const countLetters = function(sentence) {
+  const result = {};
+  for (const letter of sentence) {
+    if (letter !== ' ') {
+      if (!result[letter]) {
+        result[letter] = 0;
+      }
+      result[letter] += 1;
     }
-    results[letter] += 1;
-    
   }
-  return results;
+  return result;
 };
 
 module.exports = countLetters;
