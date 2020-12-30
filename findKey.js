@@ -3,7 +3,7 @@
 //should return undefined.
 
 const findKey = function(object, callback) {
-  for (let key of Object.keys(object)) {
+  for (const key of Object.keys(object)) {
     if (callback(object[key])) {
       return key;
     }
