@@ -2,7 +2,7 @@
   "name": "@mitra_nami/lotide",
   "version": "1.0.1",
   "description": "Mitra's Lotide",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
