@@ -15,7 +15,12 @@ const eqObjects = function(obj1, obj2) {
     if (Array.isArray(value1) && Array.isArray(value2)) {
       //both values are arrays
       if (!eqArrays(value1, value2)) {
-        return false
+        return false;
+      }
+    } else if ((typeof value1 === 'object' && value1 !== null) && (typeof value1 === 'object' && value1 !== null)) {
+      //each value's type is object and it's not null or an array
+      if (!eqObjects(value1, value2)) {
+        return false;
       }
     } else {
       //assuming values are primitives if they're not arrays
@@ -24,8 +29,19 @@ const eqObjects = function(obj1, obj2) {
       }
     }
   }
+
   return true;
 };
+
+
+// const result1 = eqObjects({ a: { y: {x: 0, w: 1}, z: [2, 3] }, b: 2 }, { a: { y: {x: 0, w: 1}, z: [2, 3] }, b: 2 }); // => true
+// console.log(result1);
+
+// const result2 = eqObjects({ a: { y: {x: 0, w: 1}, z: [2, 3] }, b: 2 }, { a: { y: {x: 2, w: 1}, z: [2, 3] }, b: 2 }); // => false
+// console.log(result2);
+
+// const result3 = eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }); // => false
+// console.log(result3);
 
 
 module.exports = eqObjects;
