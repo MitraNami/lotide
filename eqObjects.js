@@ -17,13 +17,13 @@ const eqObjects = function(obj1, obj2) {
       if (!eqArrays(value1, value2)) {
         return false;
       }
-    } else if ((typeof value1 === 'object' && value1 !== null) && (typeof value1 === 'object' && value1 !== null)) {
+    } else if ((typeof value1 === 'object' && value1 !== null) && (typeof value2 === 'object' && value2 !== null)) {
       //each value's type is object and it's not null or an array
       if (!eqObjects(value1, value2)) {
         return false;
       }
     } else {
-      //assuming values are primitives if they're not arrays
+      //assuming values are primitives if they're not objects
       if (value1 !== value2) {
         return false;
       }
